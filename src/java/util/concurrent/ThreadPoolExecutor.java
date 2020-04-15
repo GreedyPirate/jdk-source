@@ -1168,6 +1168,7 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
                         afterExecute(task, thrown);// 啥也没做
                     }
                 } finally {
+                    // 置为null，firstTask会为null，while循环判断会从workQueue里取，如果是workQueue里的task，也会被GC回收
                     task = null;
                     // 已执行的任务数加1
                     w.completedTasks++;
