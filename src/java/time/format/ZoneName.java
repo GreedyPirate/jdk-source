@@ -1,35 +1,32 @@
 /*
- * Copyright (c) 2013, Oracle and/or its affiliates. All rights reserved.
- * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * Copyright (c) 2013, 2017, Oracle and/or its affiliates. All rights reserved.
+ * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
  *
- * This code is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License version 2 only, as
- * published by the Free Software Foundation.  Oracle designates this
- * particular file as subject to the "Classpath" exception as provided
- * by Oracle in the LICENSE file that accompanied this code.
  *
- * This code is distributed in the hope that it will be useful, but WITHOUT
- * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
- * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
- * version 2 for more details (a copy is included in the LICENSE file that
- * accompanied this code).
  *
- * You should have received a copy of the GNU General Public License version
- * 2 along with this work; if not, write to the Free Software Foundation,
- * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
  *
- * Please contact Oracle, 500 Oracle Parkway, Redwood Shores, CA 94065 USA
- * or visit www.oracle.com if you need additional information or have any
- * questions.
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
  */
 package java.time.format;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Locale;
 import java.util.Map;
-import java.util.Map.Entry;
-import java.util.Set;
 
 /**
  * A helper class to map a zone name to metazone and back to the
@@ -195,7 +192,7 @@ class ZoneName {
         "Africa/Ndjamena", "Africa_Western", "Africa/Lagos",
         "Asia/Macau", "China", "Asia/Shanghai",
         "America/Lima", "Peru", "America/Lima",
-        "Africa/Windhoek", "Africa_Western", "Africa/Lagos",
+        "Africa/Windhoek", "Africa_Central", "Africa/Maputo",
         "America/Sitka", "Alaska", "America/Juneau",
         "America/Mazatlan", "America_Mountain", "America/Denver",
         "Asia/Saigon", "Indochina", "Asia/Saigon",
@@ -327,7 +324,7 @@ class ZoneName {
         "Atlantic/Faroe", "Europe_Western", "Atlantic/Canary",
         "America/Cambridge_Bay", "America_Mountain", "America/Denver",
         "America/Los_Angeles", "America_Pacific", "America/Los_Angeles",
-        "Africa/Khartoum", "Africa_Eastern", "Africa/Nairobi",
+        "Africa/Khartoum", "Africa_Central", "Africa/Maputo",
         "Europe/Simferopol", "Europe_Eastern", "Europe/Bucharest",
         "Australia/Currie", "Australia_Eastern", "Australia/Sydney",
         "Europe/Guernsey", "GMT", "Atlantic/Reykjavik",
@@ -335,6 +332,7 @@ class ZoneName {
         "America/Eirunepe", "Amazon", "America/Manaus",
         "Africa/Nairobi", "Africa_Eastern", "Africa/Nairobi",
         "Asia/Yakutsk", "Yakutsk", "Asia/Yakutsk",
+        "Asia/Yangon", "Myanmar", "Asia/Rangoon",
         "America/Goose_Bay", "Atlantic", "America/Halifax",
         "Africa/Maseru", "Africa_Southern", "Africa/Johannesburg",
         "America/Swift_Current", "America_Central", "America/Chicago",
@@ -746,7 +744,6 @@ class ZoneName {
         "UTC", "Etc/UTC",
         "Canada/Newfoundland", "America/St_Johns",
         "Europe/Skopje", "Europe/Belgrade",
-        "Canada/East-Saskatchewan", "America/Regina",
         "PRC", "Asia/Shanghai",
         "UCT", "Etc/UCT",
         "America/Mendoza", "America/Argentina/Mendoza",
@@ -770,6 +767,7 @@ class ZoneName {
         "America/Indianapolis", "America/Indiana/Indianapolis",
         "Europe/Belfast", "Europe/London",
         "America/Kralendijk", "America/Curacao",
+        "Asia/Rangoon", "Asia/Yangon",
     };
 
     private static final Map<String, String> zidToMzone = new HashMap<>();
